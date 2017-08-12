@@ -1,0 +1,254 @@
+@import 'normalize';
+
+$white: #ffffff;
+
+html {
+  box-sizing: border-box;
+  background-color: #D5C6E0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #7c317c !important;
+  color: #7C317C !important;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+}
+
+.header {
+  background-image: linear-gradient(#F6B1F6, #BD82C7);
+  height: 88px;
+}
+
+.nav-center {
+  float: right;
+  padding-top: 35px;
+}
+
+.nav {
+  a {
+    color: #531253;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: -.05em;
+    margin-left: 3em;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+
+  a::after {
+    margin-top: 10px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #531253;
+    transition: width .3s;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+}
+
+#logo {
+  width: 340px;
+  height: 75px;
+  margin-left: 10%;
+  padding-top: 10px;
+}
+
+.banner {
+  background-image: linear-gradient(#7C317C, #a060a0);
+  margin-top: 88px;
+  .text-wrapper {
+    text-align: center;
+    margin-left: 150px;
+    position: relative;
+    top: -55px;
+    left: -20px;
+    .my-life {
+      color: $white;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 200;
+      font-size: 50pt;
+      margin-bottom: 45px;
+    }
+    a {
+      margin-left: 20px;
+    }
+  }
+  .album {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 8%;
+  }
+}
+
+.email-sub {
+  background-color: #ffffff;
+  .email-wrapper {
+    margin-left: 80px;
+    text-align: center;
+    .info {
+      color: #7B497B;
+      font-family: 'Arimo', sans-serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 27pt;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    .input-wrapper {
+      padding-bottom: 30px;
+    }
+    .input {
+      border: solid 2px #D5C6E0;
+      color: #D5C6E0;
+      border-radius: 20px;
+      padding-left: 15px;
+      height: 30px;
+      width: 250px;
+      margin-left: -20px;
+      font-family: 'Arimo', sans-serif;
+      font-weight: 700;
+    }
+    .subscribe {
+      background-color: #7C317C;
+      border-radius: 30px;
+      width: 100px;
+      height: auto;
+      padding: 6px 7px;
+      margin-left: 15px;
+      position: relative;
+      top: -2px;
+      a {
+        color: $white;
+        font-family: 'Fira Sans', sans-serif;
+      }
+    }
+    .subscribe:hover {
+      background-color: #d5c6e0;
+    }
+  }
+}
+
+.social {
+  padding-top: 25px;
+  background-image: linear-gradient(#D7BBEA, #C69EE4);
+  height: 280px;
+  color: #7C317C;
+}
+.social-wrapper {
+  text-align: center;
+
+  .follow {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 25pt;
+  }
+  .chandler {
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 35pt;
+    padding-bottom: 25px;
+  }
+  .text-wrapper {
+    padding-left: 40px;
+  }
+  .dub {
+    height: 6rem;
+    width: 6rem;
+    margin-left: 30px;
+  }
+  .dub:hover {
+    // height: 6.8rem;
+    // width: 6.8rem;
+    position: relative;
+    top: -5px;
+  }
+}
+
+.footer-wrapper {
+  text-align: center;
+  color: $white;
+  margin-left: 43.5%;
+  font-family: 'Arimo', sans-serif;
+  font-size: 10pt;
+  a {
+    color: $white;
+  }
+  .copyright {
+    font-size: 8pt;
+  }
+  .email {
+    margin-bottom: 5px;
+    position: relative;
+    left: -3px;
+  }
+
+  .direction {
+    margin-top: 20px;
+  }
+}
+
+.footer-socials {
+  float: right;
+  margin-top: 70px;
+  .mini {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 5px;
+  }
+  .mini:hover {
+    height: 2.2rem;
+    width: 2.2rem
+  }
+  .patchwork {
+    height: 4rem;
+    width: 5rem;
+    margin-left: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+  }
+  .mini-wrapper {
+    position: relative;
+    top: -12px;
+  }
+}
+
+.footer {
+  // background-color: #D796D7;
+  background-color: #a060a0;
+  height: 139px;
+}
+
+// for the spotify button
+.upmove {
+  position: relative;
+}

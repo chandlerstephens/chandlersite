@@ -1,0 +1,178 @@
+@import 'normalize';
+
+$white: #ffffff;
+
+html {
+  box-sizing: border-box;
+  background-color: #D5C6E0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-color: #7c317c !important;
+  color: #7C317C !important;
+}
+
+header {
+  position: fixed;
+  top:0px;
+  margin:auto;
+  z-index:100000;
+  width:100%;
+}
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+}
+
+.header {
+  background-image: linear-gradient(#F6B1F6, #BD82C7);
+  height: 88px;
+}
+
+.nav-center {
+  float: right;
+  padding-top: 35px;
+}
+
+.nav {
+  a {
+    color: #531253;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: -.05em;
+    margin-left: 3em;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+
+  a::after {
+    margin-top: 10px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #531253;
+    transition: width .3s;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+}
+
+#logo {
+  width: 340px;
+  height: 75px;
+  margin-left: 10%;
+  padding-top: 10px;
+}
+
+
+.body {
+  margin-top: 88px;
+  background-image: linear-gradient(#bd82c7, #804c80);
+  height: 100%;
+  width: 100%;
+}
+
+.bio-square {
+  width: 60%;
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
+  background-color: $white;
+  font-family: 'Karla', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: .5rem;
+  line-height: 2rem;
+  font-size: 14pt;
+
+}
+
+.chandler-bio {
+  background-image: url("../../images/chanderbio.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  max-width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.text-wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.footer-socials {
+  float: right;
+  margin-top: 70px;
+
+  .patchwork {
+    height: 4rem;
+    width: 5rem;
+    margin-left: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+  }
+}
+.mini {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 5px;
+}
+.mini-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 43.7%;
+}
+.mini:hover {
+  position: relative;
+  top: -5px;
+}
+
+.footer {
+  text-align: center;
+  color: $white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 10pt;
+  height: 139px;
+  position: relative;
+}
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  a {
+    color: $white;
+  }
+  .email {
+    margin-bottom: 5px;
+    position: relative;
+    left: -3px;
+  }
+
+  .direction {
+    margin-top: 20px;
+  }
+}
+
+.copyright {
+  font-size: 8pt;
+}
